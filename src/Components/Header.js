@@ -12,6 +12,7 @@ import { CiHeart } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
 import Nav from "./Nav";
 import Logo from "./Pages/Logo";
+import Home from "./Pages/Home";
 
 const Header = () => {
   return (

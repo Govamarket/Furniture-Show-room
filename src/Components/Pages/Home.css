@@ -13,3 +13,21 @@
   min-height: 100vh;
   z-index: 1;
 }
+
+.content{
+    background: #FFF3E3;
+    line-height: 4rem;
+}
+
+.text-h{
+    color: #B88E2F;
+}
+
+.button{
+    background:  #B88E2F;
+    width: 40%;
+}
+
+.button button p{
+    text-align: center;
+}
