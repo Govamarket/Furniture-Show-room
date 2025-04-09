@@ -16,7 +16,7 @@ import Logo from "./Pages/Logo";
 const Header = () => {
   return (
     <header className="border-b p-3 pt-5 pb-5 bg-white">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className=" mx-auto flex justify-between items-center">
         <Link to="/">
           {/* <span className="font-bold">Furnio</span> */}
           <Logo />

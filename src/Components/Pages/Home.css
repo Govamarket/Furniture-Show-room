@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url(/src/Asset/hero-section/scandinavian-interior-mockup-wall-decal-background\ 1.png);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+}
