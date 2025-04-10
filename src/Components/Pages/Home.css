@@ -5,7 +5,7 @@
 }
 
 .container{
-    background-image: url(/src/Asset/hero-section/scandinavian-interior-mockup-wall-decal-background\ 1.png);
+    background-image: url(./../../Asset/chair1.png);
     background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 
 .content{
     background: #FFF3E3;
-    line-height: 4rem;
+    line-height: 10vh;
 }
 
 .text-h{
@@ -26,6 +26,7 @@
 .button{
     background:  #B88E2F;
     width: 40%;
+    height: 10vh;
 }
 
 .button button p{
