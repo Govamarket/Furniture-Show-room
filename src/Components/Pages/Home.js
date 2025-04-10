@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.css";
-import dinNer from "./../../Asset/mskk.png";
-import newImage from "./../../Asset/roomI.png";
-
+import diningTable from "./../../Asset/dining.png";
+import livingIcon from "./../../Asset/living.png";
+import bedRoom from "./../../Asset/bedroom.png";
 const Home = () => {
   return (
     <div>
@@ -36,17 +36,33 @@ const Home = () => {
       </div>
 
       <div>
-        <section>
-          <span>
+        <section className="flex justify-center p-10">
+          <span className="text-center font-extrabold text-lg">
             <h1>Browse The Range</h1>
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <span className="font-normal">
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </span>
           </span>
         </section>
-        <section>
-          <img src={dinNer} />
-          <img src={newImage} />
+        <section className="flex justify-center gap-3 overflow-auto md: flex-wrap">
+          <div className="text-center font-bold">
+            <img src={diningTable} className="w-50" />
+            <span>
+              <p>Dining</p>
+            </span>
+          </div>
+
+          <div className="text-center font-bold">
+            <img src={livingIcon} className="w-50" />
+            <span>living</span>
+          </div>
+
+          <div className="text-center font-bold">
+            <img src={bedRoom} className="w-50" />
+            <span>
+              <p>Bedroom</p>
+            </span>
+          </div>
         </section>
       </div>
     </div>
