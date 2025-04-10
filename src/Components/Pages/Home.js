@@ -101,7 +101,7 @@ const Home = () => {
               <span className="text-white">
                 <p>Leviosa</p>
               </span>
-              <span>
+              <span className="text-white">
                 <p>Stylish cafe chair</p>
               </span>
               <span className="font-bold">
