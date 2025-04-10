@@ -3,6 +3,9 @@ import "./Home.css";
 import diningTable from "./../../Asset/dining.png";
 import livingIcon from "./../../Asset/living.png";
 import bedRoom from "./../../Asset/bedroom.png";
+import tableBar from "./../../Asset/solfd.png";
+import sofaBar from "./../../Asset/sodp.png";
+
 const Home = () => {
   return (
     <div>
@@ -65,6 +68,97 @@ const Home = () => {
           </div>
         </section>
       </div>
+
+      <section className="our-product ">
+        <div className="text-center mt-5 font-extrabold p-5">
+          <span>Our Product</span>
+        </div>
+        <section className="flex justify-evenly">
+          <div>
+            <img src={tableBar} />
+            <span>
+              <p>Syltherine</p>
+            </span>
+            <span>
+              <p>Stylish cafe chair</p>
+            </span>
+            <span>
+              <p>Rp 2.500.000</p>
+              <p>Rp 3.500.000</p>
+            </span>
+          </div>
+          <div className="relative  opacity-50">
+            <img src={sofaBar} />
+            <div className="absolute top-10 text-center mx-20">
+              <span className="add p-2 text-white font-bold rounded">
+                <button>Add to cart</button>
+              </span>
+              <span className="flex mt-4 text-white gap-1">
+                <p>share</p>
+                <p>Compare</p>
+                <p>Like</p>
+              </span>
+              <span className="text-white">
+                <p>Leviosa</p>
+              </span>
+              <span>
+                <p>Stylish cafe chair</p>
+              </span>
+              <span className="font-bold">
+                <p>Rp 2.500.000</p>
+              </span>
+            </div>
+          </div>
+          <div>
+            <span>
+              <p></p>
+            </span>
+            <span>
+              <p></p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <p></p>
+            </span>
+            <span>
+              <p></p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <p></p>
+            </span>
+            <span>
+              <p></p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <p></p>
+            </span>
+            <span>
+              <p></p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <p></p>
+            </span>
+            <span>
+              <p></p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <p></p>
+            </span>
+            <span>
+              <p></p>
+            </span>
+          </div>
+        </section>
+      </section>
     </div>
   );
 };
