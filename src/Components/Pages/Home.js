@@ -182,7 +182,7 @@ const Home = () => {
                   <p>Rp 2.500.000</p>
                 </button>
               </span>
-              <span>
+              <span className="line-through">
                 {" "}
                 <p>Rp 3.500.000</p>
               </span>
