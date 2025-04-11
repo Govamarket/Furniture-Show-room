@@ -50,3 +50,8 @@ font-family
     background:#B88E2F;
     color: #FFFFFF;
 }
+
+.show-room{
+    border: 2px solid #B88E2F;
+    color: #B88E2F;
+}

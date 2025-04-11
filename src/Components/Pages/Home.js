@@ -281,6 +281,13 @@ const Home = () => {
           </div>
         </section>
       </section>
+
+      {/* Show more button */}
+      <section className="flex justify-center items-center mt-3 p-3">
+        <button className="show-room font-bold border-2 pt-2 p-2 w-40">
+          Show More
+        </button>
+      </section>
     </div>
   );
 };
