@@ -51,7 +51,7 @@ const Home = () => {
             <span className="text-center font-extrabold text-2xl">
               <h1>Browse The Range</h1>
             </span>
-            <span className="font-normal">
+            <span className="font-normal flex justify-center text-center items-center">
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </span>
           </div>
