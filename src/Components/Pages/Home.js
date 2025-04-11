@@ -92,7 +92,7 @@ const Home = () => {
               <p>Syltherine</p>
             </span>
 
-            <span>
+            <span className="text-sm">
               <p>Stylish cafe chair</p>
             </span>
             <div className="flex gap-1">
@@ -113,16 +113,16 @@ const Home = () => {
               <span className="add p-2 text-white font-bold rounded">
                 <button>Add to cart</button>
               </span>
-              <span className="flex mt-4 text-black font-bold gap-1">
+              <span className="flex mt-4 text-black font-serif gap-1">
                 <p>share</p>
                 <p>Compare</p>
                 <p>Like</p>
               </span>
             </div>
-            <span className="text-black">
+            <span className="text-black font-bold">
               <p>Leviosa</p>
             </span>
-            <span className="text-black">
+            <span className="text-black text-sm">
               <p>Stylish cafe chair</p>
             </span>
             <span className="font-bold">
@@ -144,7 +144,7 @@ const Home = () => {
             <button>
               <p>Lolito</p>
             </button>
-            <span>
+            <span className="text-sm">
               <p>Luxury big sofa</p>
             </span>
 
@@ -155,7 +155,7 @@ const Home = () => {
                   <p>Rp 7.000.000</p>
                 </button>
               </span>
-              <span>
+              <span className="text-sm">
                 <p>Rp 14.000.000</p>
               </span>
             </div>
@@ -170,11 +170,11 @@ const Home = () => {
             </div>
 
             <span>
-              <p>Syltherine</p>
+              <p>Respira</p>
             </span>
 
-            <span>
-              <p>Stylish cafe chair</p>
+            <span className="text-sm">
+              <p>Outdoor bar table and stool</p>
             </span>
             <div className="flex gap-1">
               <span>
