@@ -84,8 +84,9 @@ const Home = () => {
         <div className="text-center mt-5 font-extrabold text-2xl p-5">
           <span>Our Product</span>
         </div>
+
         <section className="flex justify-evenly gap-x-1 gap-y-3 md: flex-wrap">
-          <div className="relative">
+          <div className="relative bg-gray-50 rounded-lg">
             <img src={tableBar} className="rounded-lg" />
             <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10">
               <p>-30</p>
@@ -109,13 +110,14 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div className="relative  opacity-50">
+
+          <div className="relative  opacity-50  bg-gray-50 rounded-lg">
             <img src={sofaBar} className="rounded-lg" />
             <div className="absolute top-20 text-center mx-20">
               <span className="add p-2 text-white font-bold rounded">
                 <button>Add to cart</button>
               </span>
-              <span className="flex mt-4 text-black font-serif gap-1">
+              <span className="flex mt-4 text-white font-serif gap-1">
                 <p>share</p>
                 <p>Compare</p>
                 <p>Like</p>
@@ -135,7 +137,7 @@ const Home = () => {
             </span>
           </div>
 
-          <div>
+          <div className=" bg-gray-50 rounded-lg">
             <div className="relative">
               <img src={washBase} className="rounded-lg" />
               <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10">
@@ -163,7 +165,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div>
+          <div className=" bg-gray-50 rounded-lg">
             <div className="relative">
               <img src={roomSofa} className="rounded-lg" />
               <span className="absolute right-7 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10">
@@ -190,7 +192,8 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div>
+
+          <div className=" bg-gray-50 rounded-lg">
             <img src={bigSofa} className="rounded-lg" />
             <span className="font-bold">
               <p>Grifo</p>
@@ -208,7 +211,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div>
+          <div className=" bg-gray-50 rounded-lg">
             <div className="relative">
               <img src={palorSofa} className="rounded-lg" />
               <span className="absolute right-7 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10">
@@ -232,7 +235,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div>
+          <div className=" bg-gray-50 rounded-lg">
             <div className="relative">
               <img src={latternLap} className="rounded-lg" />
               <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10">
@@ -259,7 +262,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div>
+          <div className=" bg-gray-50 rounded-lg">
             <div className="relative">
               <img src={brownSofa} className="rounded-lg" />
               <span className="absolute right-7 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10">
