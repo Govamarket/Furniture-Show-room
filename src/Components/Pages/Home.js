@@ -37,7 +37,7 @@ const Home = () => {
             </section>{" "}
             <button
               type="button"
-              className="button rounded-xl flex justify-center items-center text-center py-1 px-3 mt-10"
+              className="button rounded-xl flex justify-center items-center text-center py-1 px-3 mt-10 h-auto"
             >
               <p>Buy Now</p>
             </button>
