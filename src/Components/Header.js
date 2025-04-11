@@ -1,18 +1,12 @@
 import React from "react";
 import Navigation from "./Navigation";
-import Cart from "./Pages/Cart";
-import Like from "./Pages/Like";
-import Profile from "./Pages/Profile";
-import Search from "./Pages/Search";
 import { Link } from "react-router-dom";
-import NavigationMenu from "./NavigationMenu";
 import { FaCartPlus } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { CiHeart } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
 import Nav from "./Nav";
 import Logo from "./Pages/Logo";
-import Home from "./Pages/Home";
 
 const Header = () => {
   return (
