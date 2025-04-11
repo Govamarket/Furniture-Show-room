@@ -84,8 +84,8 @@ const Home = () => {
         </div>
         <section className="flex justify-evenly gap-x-1 gap-y-3 md: flex-wrap">
           <div className="relative">
-            <img src={tableBar} />
-            <span className="absolute right-7 top-10 bg-red-400 p-2 rounded-lg text-white flex items-center">
+            <img src={tableBar} className="rounded-lg" />
+            <span className="absolute right-7 top-10 bg-red-400 p-2 rounded-full text-white flex items-center">
               <p>-30</p>
             </span>
             <span>
@@ -108,7 +108,7 @@ const Home = () => {
             </div>
           </div>
           <div className="relative  opacity-50">
-            <img src={sofaBar} />
+            <img src={sofaBar} className="rounded-lg" />
             <div className="absolute top-20 text-center mx-20">
               <span className="add p-2 text-white font-bold rounded">
                 <button>Add to cart</button>
@@ -134,15 +134,20 @@ const Home = () => {
           </div>
 
           <div>
-            <img src={washBase} className="rounded-md" />
-            <span>
-              <button>
-                <p>Lolito</p>
-              </button>
-              <span>
-                <p>Luxury big sofa</p>
+            <div className="relative">
+              <img src={washBase} className="rounded-lg" />
+              <span className="absolute right-7 top-10 bg-red-400 p-2 rounded-full text-white flex items-center">
+                <p>-50</p>
               </span>
+            </div>
+
+            <button>
+              <p>Lolito</p>
+            </button>
+            <span>
+              <p>Luxury big sofa</p>
             </span>
+
             <div className="flex gap-2">
               <span className="font-bold">
                 <button>
@@ -157,7 +162,13 @@ const Home = () => {
           </div>
 
           <div>
-            <img src={roomSofa} />
+            <div className="relative">
+              <img src={roomSofa} className="rounded-lg" />
+              <span className="absolute right-7 top-10 bg-green-400 p-2 rounded-full text-white flex w-10">
+                <p>New</p>
+              </span>
+            </div>
+
             <span>
               <p>Syltherine</p>
             </span>
@@ -178,51 +189,7 @@ const Home = () => {
             </div>
           </div>
           <div>
-            <img src={bigSofa} />
-            <span>
-              <p>Syltherine</p>
-            </span>
-
-            <span>
-              <p>Stylish cafe chair</p>
-            </span>
-            <div className="flex gap-1">
-              <span>
-                <button className="font-bold">
-                  <p>Rp 2.500.000</p>
-                </button>
-              </span>
-              <span>
-                {" "}
-                <p>Rp 3.500.000</p>
-              </span>
-            </div>
-          </div>
-
-          <div>
-            <img src={palorSofa} />
-            <span>
-              <p>Syltherine</p>
-            </span>
-
-            <span>
-              <p>Stylish cafe chair</p>
-            </span>
-            <div className="flex gap-1">
-              <span>
-                <button className="font-bold">
-                  <p>Rp 2.500.000</p>
-                </button>
-              </span>
-              <span>
-                {" "}
-                <p>Rp 3.500.000</p>
-              </span>
-            </div>
-          </div>
-
-          <div>
-            <img src={latternLap} />
+            <img src={bigSofa} className="rounded-lg" />
             <span>
               <p>Syltherine</p>
             </span>
@@ -244,7 +211,51 @@ const Home = () => {
           </div>
 
           <div>
-            <img src={brownSofa} />
+            <img src={palorSofa} className="rounded-lg" />
+            <span>
+              <p>Syltherine</p>
+            </span>
+
+            <span>
+              <p>Stylish cafe chair</p>
+            </span>
+            <div className="flex gap-1">
+              <span>
+                <button className="font-bold">
+                  <p>Rp 2.500.000</p>
+                </button>
+              </span>
+              <span>
+                {" "}
+                <p>Rp 3.500.000</p>
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <img src={latternLap} className="rounded-lg" />
+            <span>
+              <p>Syltherine</p>
+            </span>
+
+            <span>
+              <p>Stylish cafe chair</p>
+            </span>
+            <div className="flex gap-1">
+              <span>
+                <button className="font-bold">
+                  <p>Rp 2.500.000</p>
+                </button>
+              </span>
+              <span>
+                {" "}
+                <p>Rp 3.500.000</p>
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <img src={brownSofa} className="rounded-lg" />
             <span>
               <p>Syltherine</p>
             </span>
