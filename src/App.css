@@ -1,26 +1,13 @@
-/* Tailwind-like responsive classes */
-@media (min-width: 768px) {
-  .md-hidden {
-    display: none;
-  }
+@import
+ url(
+'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'
+);
+
+body
+ {
   
-  .md-block {
-    display: block;
-  }
-}
-
-/* Navigation styles */
-.nav-desktop {
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-desktop a {
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  transition: background-color 0.2s;
-}
-
-.nav-desktop a:hover {
-  background-color: #f3f4f6;
+font-family
+: 
+'Poppins'
+, sans-serif;
 }

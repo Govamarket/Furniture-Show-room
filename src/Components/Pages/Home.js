@@ -101,7 +101,7 @@ const Home = () => {
                   <p>Rp 2.500.000</p>
                 </button>
               </span>
-              <span>
+              <span className="text-sm line-through">
                 {" "}
                 <p>Rp 3.500.000</p>
               </span>
@@ -155,7 +155,7 @@ const Home = () => {
                   <p>Rp 7.000.000</p>
                 </button>
               </span>
-              <span className="text-sm">
+              <span className="text-sm line-through">
                 <p>Rp 14.000.000</p>
               </span>
             </div>
@@ -250,7 +250,7 @@ const Home = () => {
                   <p>Rp 7.000.000</p>
                 </button>
               </span>
-              <span>
+              <span className="text-sm line-through">
                 {" "}
                 <p>Rp 14.000.000</p>
               </span>
