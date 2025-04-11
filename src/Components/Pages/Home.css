@@ -56,6 +56,4 @@ font-family
 
 .add-cart:hover{
     opacity: 0.50;
-    transition: all;
-    transition-duration: 300;
 }
