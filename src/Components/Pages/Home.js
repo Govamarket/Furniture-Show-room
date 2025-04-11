@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div>
       <div className=" container">
-        <div className="content max-w-md   absolute right-5 top-37 text-white rounded-xl text-x p-4 h-auto">
+        <div className="content max-w-md   absolute right-1 top-37 text-white rounded-xl text-x p-4 h-auto">
           <div>
             <section className="text-black font-semibold text-x">
               <p>New Arrival</p>
