@@ -53,3 +53,9 @@ font-family
     border: 2px solid #B88E2F;
     color: #B88E2F;
 }
+
+.add-cart:hover{
+    opacity: 0.50;
+    transition: all;
+    transition-duration: 300;
+}

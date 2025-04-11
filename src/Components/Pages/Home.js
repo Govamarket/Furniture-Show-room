@@ -111,7 +111,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="relative  opacity-50  bg-gray-50 rounded-lg">
+          <div className="add-cart relative  bg-gray-50 rounded-lg">
             <img src={sofaBar} className="rounded-lg" />
             <div className="absolute top-20 text-center mx-20">
               <span className="add p-2 text-white font-bold rounded">
