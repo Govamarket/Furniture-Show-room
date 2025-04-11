@@ -35,12 +35,14 @@ const Home = () => {
                 tellus, luctus nec ullamcorper mattis.
               </p>
             </section>{" "}
-            <button
-              type="button"
-              className="button rounded-xl flex justify-center items-center text-center py-1 px-3 mt-10 h-auto"
-            >
-              <p>Buy Now</p>
-            </button>
+            <div className="pt-2 mt-5">
+              <button
+                type="button"
+                className="button rounded-xl flex justify-center items-center pt-1 p-1 w-40 h-14"
+              >
+                <p>Buy Now</p>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -288,6 +290,8 @@ const Home = () => {
           Show More
         </button>
       </section>
+
+      {/* Content of beautiful  rooms inspiration */}
     </div>
   );
 };
