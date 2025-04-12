@@ -24,9 +24,9 @@ const Room = () => {
       {/* Right Side - Scrollable on Mobile */}
       <motion.div
         className="product w-full md:flex-1 overflow-x-auto flex gap-4 scrollbar-hide"
-        initial={{ opacity: 10, x: 30 }}
+        initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 0.7 }}
       >
         {/* Cards wrapper for proper layout on desktop */}
         <div className="flex gap-4 min-w-max md:min-w-0">
@@ -64,7 +64,7 @@ const Room = () => {
 
           {/* Angle Line */}
           <div className="p-4 space-y-1">
-            <img src={angleLine} alt="Arrow" className="h-full" />
+            <img src={angleLine} alt="Arrow" className="rounded-md" />
           </div>
         </div>
       </motion.div>
