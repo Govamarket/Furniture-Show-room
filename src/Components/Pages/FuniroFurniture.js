@@ -8,7 +8,7 @@ import Kit from "./../../Asset/kit.png";
 import Pic from "./../../Asset/pic.png";
 const FuniroFurniture = () => {
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center p-4">
+    <div className="min-h-4-screen bg-white flex items-center justify-center p-4">
       <div className="max-w-5xl w-full">
         {/* Heading */}
         <div className="text-center mb-6">
