@@ -2,78 +2,59 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-white text-xs p-5 absolute bottom-0 w-full h-5">
-      <footer>
-        <div className="flex justify-between md:flex gap-3 w-full">
-          <section className="leading-5">
-            <span className="font-bold">
-              {" "}
-              <p>Funiro</p>
-            </span>
-            <span>
-              <p>400 University Drive Suite 200 Coral Gables,</p>
-            </span>
-            <span>
-              <p>FL 33134 USA</p>
-            </span>
-          </section>
+    <footer className="bg-white text-xs px-4 py-6 md:px-10 lg:px-20 text-gray-700">
+      {/* Top section */}
+      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6 w-full">
+        {/* Address */}
+        <section className="leading-5 max-w-xs">
+          <p className="font-bold text-base">Funiro</p>
+          <p>400 University Drive Suite 200 Coral Gables,</p>
+          <p>FL 33134 USA</p>
+        </section>
 
-          <div>
-            <span className="font-bold">
-              <p>Links</p>
-            </span>
-            <section className="leading-6">
-              <span>Home</span>
-              <span>
-                <p>Shop</p>
-              </span>
-              <span>
-                <p>About</p>
-              </span>
-              <span>
-                <p>Contact</p>
-              </span>
-            </section>
-          </div>
-
-          <section>
-            <span className="font-bold">
-              <p>Help</p>
-            </span>
-            <div className="leading-6">
-              <span>
-                <p>Payment Options</p>
-              </span>
-              <span>
-                <p>Returns</p>
-              </span>
-              <span>
-                <p>Privacy Policies</p>
-              </span>
-            </div>
+        {/* Links */}
+        <div className="flex flex-col sm:flex-row gap-6">
+          <section className="leading-6">
+            <p className="font-bold text-base mb-2">Links</p>
+            <ul className="space-y-1">
+              <li>Home</li>
+              <li>Shop</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
           </section>
 
           <section className="leading-6">
-            <span className="font-bold">Newsletter</span>
-            <div>
-              <span>
-                <input
-                  type="text"
-                  placeholder="Enter Your Email Address"
-                  className="border-0 outline-none"
-                ></input>
-                <span className="font-bold">
-                  <button>SUBSCRIBE</button>
-                </span>
-              </span>
+            <p className="font-bold text-base mb-2">Help</p>
+            <ul className="space-y-1">
+              <li>Payment Options</li>
+              <li>Returns</li>
+              <li>Privacy Policies</li>
+            </ul>
+          </section>
+
+          {/* Newsletter */}
+          <section className="leading-6 max-w-xs">
+            <p className="font-bold text-base mb-2">Newsletter</p>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+              <input
+                type="text"
+                placeholder="Enter Your Email Address"
+                className="border border-gray-400 px-3 py-1 rounded-md w-full sm:w-auto"
+              />
+              <button className="bg-yellow-500 text-white px-4 py-1 rounded-md font-bold">
+                SUBSCRIBE
+              </button>
             </div>
           </section>
         </div>
-        <section className="border-t border-gray-500 p-2 pt-1">
-          <p> Copyright 2025</p>
-        </section>
-      </footer>
-    </div>
+      </div>
+
+      {/* Bottom copyright */}
+      <div className="border-t border-gray-300 mt-6 pt-4 text-center text-gray-500 text-xs">
+        © {new Date().getFullYear()} Funiro. All rights reserved.
+      </div>
+    </footer>
   );
 };
 
