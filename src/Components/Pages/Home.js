@@ -5,6 +5,7 @@ import livingIcon from "./../../Asset/living.png";
 import bedRoom from "./../../Asset/bedroom.png";
 import OurProduct from "./OurProduct";
 import Room from "./Room";
+import FuniroFurniture from "./FuniroFurniture";
 
 const Home = () => {
   return (
@@ -82,6 +83,10 @@ const Home = () => {
       </section>
 
       {/* Content of beautiful  rooms inspiration */}
+
+      <section>
+        <FuniroFurniture />
+      </section>
     </div>
   );
 };
