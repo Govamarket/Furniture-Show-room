@@ -57,3 +57,12 @@ font-family
 .add-cart:hover{
     opacity: 0.50;
 }
+
+.product::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  .product {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }

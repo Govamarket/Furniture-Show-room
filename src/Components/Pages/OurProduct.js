@@ -186,7 +186,7 @@ const OurProduct = () => {
                   <p>Rp 7.000.000</p>
                 </button>
               </span>
-              <span className="text-sm line-through">
+              <span className="text-sm line-through text-gray-500">
                 {" "}
                 <p>Rp 14.000.000</p>
               </span>

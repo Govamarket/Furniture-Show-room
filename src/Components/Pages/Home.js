@@ -4,6 +4,7 @@ import diningTable from "./../../Asset/dining.png";
 import livingIcon from "./../../Asset/living.png";
 import bedRoom from "./../../Asset/bedroom.png";
 import OurProduct from "./OurProduct";
+import Room from "./Room";
 
 const Home = () => {
   return (
@@ -74,6 +75,10 @@ const Home = () => {
 
       <section>
         <OurProduct />
+      </section>
+
+      <section>
+        <Room />
       </section>
 
       {/* Content of beautiful  rooms inspiration */}
