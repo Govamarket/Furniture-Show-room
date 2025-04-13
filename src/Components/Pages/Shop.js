@@ -10,7 +10,7 @@ const Shop = () => {
         <div className="flex justify-center items-center font-extrabold">
           <h1>Shop</h1>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center gap-4">
           {/* Link  route */}
           <span>Home</span>
           <span>
