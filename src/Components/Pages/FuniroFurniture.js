@@ -1,6 +1,5 @@
 import React from "react";
 import Desk from "./../../Asset/desk.png";
-import Angle from "./../../Asset/anle.png";
 import Chair from "./../../Asset/deie.png";
 import Spac from "./../../Asset/spac.png";
 import Flask from "./../../Asset/flask.png";

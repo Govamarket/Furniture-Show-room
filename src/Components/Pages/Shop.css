@@ -1,0 +1,29 @@
+@import
+ url(
+'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'
+);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+ {
+  
+font-family
+: 
+'Poppins'
+, sans-serif;
+}
+
+
+.container{
+    background-image: url(./../../Asset/chair1.png);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 40vh;
+  z-index: 1;
+}
