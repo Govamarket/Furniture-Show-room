@@ -155,7 +155,9 @@ const Shop = () => {
         </div>
       </div>
 
-      <OurProduct />
+      <section className="mt-10">
+        <OurProduct />
+      </section>
     </div>
   );
 };
