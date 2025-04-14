@@ -18,8 +18,8 @@ font-family
 }
 
 
-.container{
-    background-image: url(./../../Asset/chair1.png);
+.contain-section{
+    background-image: url(./../../Asset/sodp.png);
     background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

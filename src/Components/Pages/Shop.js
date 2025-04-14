@@ -4,13 +4,13 @@ import { FaGreaterThan } from "react-icons/fa6";
 
 const Shop = () => {
   return (
-    <div className="container">
+    <div className="contain-section">
       {/* <section></section> */}
       <section className="pt-10 leading-10">
         <div className="flex justify-center items-center font-extrabold">
           <h1>Shop</h1>
         </div>
-        <div className="flex justify-center items-center gap-4 md:gap-4">
+        <div className="flex justify-center items-center gap-3 md:gap-2">
           {/* Link  route */}
           <span>Home</span>
           <span>
