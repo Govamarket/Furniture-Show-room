@@ -88,7 +88,7 @@ const Shop = () => {
       </div>
 
       <div className="mt-10">
-        <section className="flex justify-evenly gap-x-1 gap-y-3 md: flex-wrap">
+        <section className="flex justify-evenly gap-x-1 gap-y-10 md: flex-wrap">
           <div className="relative bg-gray-50 rounded-lg">
             <img src={tableBar} className="rounded-lg" />
             <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-sm">
@@ -114,7 +114,7 @@ const Shop = () => {
             </div>
           </div>
 
-          <div className="add-cart relative  bg-gray-50 rounded-lg">
+          <div className="add-cart relative  bg-gray-300 rounded-lg">
             <img src={sofaBar} className="rounded-lg" />
             <div className="absolute top-20 text-center mx-20">
               <span className="add p-2 text-white font-bold rounded">
@@ -291,7 +291,7 @@ const Shop = () => {
       </div>
       <div>
         {/* Replication of images on shop list {items} */}
-        <section className="flex justify-evenly gap-x-1 gap-y-3 md: flex-wrap">
+        <section className="flex justify-evenly gap-x-1 gap-y-10 md: flex-wrap">
           <div className="relative bg-gray-50 rounded-lg">
             <img src={tableBar} className="rounded-lg" />
             <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-sm">
@@ -317,7 +317,7 @@ const Shop = () => {
             </div>
           </div>
 
-          <div className="add-cart relative  bg-gray-50 rounded-lg">
+          <div className="add-cart relative  bg-gray-300 rounded-lg">
             <img src={sofaBar} className="rounded-lg" />
             <div className="absolute top-20 text-center mx-20">
               <span className="add p-2 text-white font-bold rounded">
