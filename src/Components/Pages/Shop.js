@@ -10,8 +10,75 @@ import palorSofa from "./../../Asset/sopls.png";
 import latternLap from "./../../Asset/lap.png";
 import brownSofa from "./../../Asset/sof.png";
 import roomSofa from "./../../Asset/solf.png";
+import OurProduct from "./OurProduct";
 
 const Shop = () => {
+  const products = [
+    {
+      img: tableBar,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: sofaBar,
+      name: "Leviosa",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: washBase,
+      name: "Lolito",
+      price: "$199",
+      discount: "$50",
+      description: "Luxury big sofa",
+    },
+
+    {
+      img: bigSofa,
+      name: "Respira",
+      price: "$199",
+      discount: "$50",
+      description: "Outdoor bar table and stool",
+    },
+
+    {
+      img: palorSofa,
+      name: "Pinky",
+      price: "$199",
+      discount: "$50",
+      description: "Night Lamp",
+    },
+
+    {
+      img: latternLap,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: brownSofa,
+      name: "Muggo",
+      price: "$199",
+      discount: "$50",
+      description: "Small mug",
+    },
+
+    {
+      img: roomSofa,
+      name: "Potty",
+      price: "$199",
+      discount: "$50",
+      description: "Minimalist flower pot",
+    },
+  ];
+
   return (
     <div>
       <div className="contain-section">
@@ -88,7 +155,7 @@ const Shop = () => {
       </div>
 
       <div className="mt-10">
-        <section className="flex justify-evenly gap-x-1 gap-y-10 md: flex-wrap">
+        {/* <section className="flex justify-evenly gap-x-1 gap-y-10 md: flex-wrap">
           <div className="relative bg-gray-50 rounded-lg">
             <img src={tableBar} className="rounded-lg" />
             <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-sm">
@@ -287,11 +354,11 @@ const Shop = () => {
               </span>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
       <div>
         {/* Replication of images on shop list {items} */}
-        <section className="flex justify-evenly gap-x-1 gap-y-10 md: flex-wrap">
+        {/* <section className="flex justify-evenly gap-x-1 gap-y-10 md: flex-wrap">
           <div className="relative bg-gray-50 rounded-lg">
             <img src={tableBar} className="rounded-lg" />
             <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-sm">
@@ -490,7 +557,9 @@ const Shop = () => {
               </span>
             </div>
           </div>
-        </section>
+        </section> */}
+
+        <OurProduct />
       </div>
     </div>
   );

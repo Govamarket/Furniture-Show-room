@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import tableBar from "./../../Asset/solfd.png";
 import sofaBar from "./../../Asset/sodp.png";
 import washBase from "./../../Asset/wasd.png";
@@ -9,12 +10,19 @@ import brownSofa from "./../../Asset/sof.png";
 import roomSofa from "./../../Asset/solf.png";
 
 const OurProduct = () => {
+  const location = useLocation();
+
+  // console.log(location, "========LOCATION=======-");
   return (
     <div>
       <section className="our-product ">
-        <div className="text-center mt-5 font-extrabold text-2xl p-5">
-          <span>Our Product</span>
-        </div>
+        {location.pathname === "/shop" ? (
+          ""
+        ) : (
+          <div className="text-center mt-5 font-extrabold text-2xl p-5">
+            <span>Our Product</span>
+          </div>
+        )}
 
         <section className="flex justify-evenly gap-x-1 gap-y-3 md: flex-wrap">
           <div className="relative bg-gray-50 rounded-lg">
@@ -220,9 +228,13 @@ const OurProduct = () => {
 
       {/* Show more button */}
       <section className="flex justify-center items-center mt-3 p-3">
-        <button className="show-room font-bold border-2 pt-2 p-2 w-40">
-          Show More
-        </button>
+        {location.pathname === "/shop" ? (
+          ""
+        ) : (
+          <button className="show-room font-bold border-2 pt-2 p-2 w-40">
+            Show More
+          </button>
+        )}
       </section>
     </div>
   );
