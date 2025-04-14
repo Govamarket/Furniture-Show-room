@@ -29,8 +29,8 @@ const Shop = () => {
           <div></div>
         </section>
       </div>
-      <div className="flex items-center justify-between p-4 bg-[#f5ece6] border-b border-gray-200 md:flex-wrap">
-        {/* Left Side: Filter and Layout Icons */}
+      <div className="filter flex flex-wrap items-center justify-between gap-4 p-4 bg-[#f5ece6] border-b border-gray-200">
+        {/* Left Side */}
         <div className="flex items-center space-x-3">
           <div className="flex items-center space-x-2">
             <FaFilter className="text-gray-600" />
@@ -42,18 +42,18 @@ const Shop = () => {
           </div>
         </div>
 
-        {/* Center: Results Info */}
-        <div className="text-gray-600">showing 1-16 of 32 results</div>
+        {/* Center */}
+        <div className="text-gray-600 text-sm">Showing 1–16 of 32 results</div>
 
-        {/* Right Side: Show Dropdown and Sort By */}
-        <div className="flex items-center space-x-3">
+        {/* Right Side */}
+        <div className="flex flex-wrap items-center space-x-3">
           <div className="flex items-center space-x-2">
             <label htmlFor="show" className="text-gray-700 font-medium">
               Show
             </label>
             <select
               id="show"
-              className="border border-gray-300 rounded-md px-2 py-1 focus:outline-none"
+              className="border border-gray-300 rounded-md px-2 py-1 text-sm focus:outline-none"
               defaultValue="16"
             >
               <option value="16">16</option>
@@ -67,7 +67,7 @@ const Shop = () => {
             </label>
             <select
               id="sort"
-              className="border border-gray-300 rounded-md px-2 py-1 focus:outline-none"
+              className="border border-gray-300 rounded-md px-2 py-1 text-sm focus:outline-none"
               defaultValue="default"
             >
               <option value="default">Default</option>
