@@ -27,7 +27,7 @@ const OurProduct = () => {
         <section className="flex justify-evenly gap-x-1 gap-y-3 md: flex-wrap">
           <div className="relative bg-gray-50 rounded-lg">
             <img src={tableBar} className="rounded-lg" />
-            <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-sm">
+            <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-xs">
               <p>-30</p>
             </span>
             <span>
@@ -79,7 +79,7 @@ const OurProduct = () => {
           <div className=" bg-gray-50 rounded-lg">
             <div className="relative">
               <img src={washBase} className="rounded-lg" />
-              <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-sm">
+              <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-xs">
                 <p>-50</p>
               </span>
             </div>
@@ -107,7 +107,7 @@ const OurProduct = () => {
           <div className=" bg-gray-50 rounded-lg">
             <div className="relative">
               <img src={roomSofa} className="rounded-lg" />
-              <span className="absolute right-7 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10">
+              <span className="absolute right-7 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-xs">
                 <p>New</p>
               </span>
             </div>
@@ -153,7 +153,7 @@ const OurProduct = () => {
           <div className=" bg-gray-50 rounded-lg">
             <div className="relative">
               <img src={palorSofa} className="rounded-lg" />
-              <span className="absolute right-7 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10">
+              <span className="absolute right-7 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-xs">
                 <p>New</p>
               </span>
             </div>
@@ -177,7 +177,7 @@ const OurProduct = () => {
           <div className=" bg-gray-50 rounded-lg">
             <div className="relative">
               <img src={latternLap} className="rounded-lg" />
-              <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-sm">
+              <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-xs">
                 <p>-50</p>
               </span>
             </div>
@@ -204,7 +204,7 @@ const OurProduct = () => {
           <div className=" bg-gray-50 rounded-lg">
             <div className="relative">
               <img src={brownSofa} className="rounded-lg" />
-              <span className="absolute right-7 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10">
+              <span className="absolute right-7 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-xs">
                 <p>New</p>
               </span>
             </div>
