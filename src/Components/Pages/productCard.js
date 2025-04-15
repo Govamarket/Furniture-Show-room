@@ -7,6 +7,7 @@ const ProductCard = ({
   discount,
   price,
   hasDiscount,
+  newProduct,
 }) => {
   return (
     <div className="relative bg-gray-50 rounded-lg">
@@ -14,6 +15,12 @@ const ProductCard = ({
       {hasDiscount === true ? (
         <span className="absolute right-7 top-10 bg-red-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-xs">
           <p>-30</p>
+        </span>
+      ) : null}
+
+      {newProduct === true ? (
+        <span className="absolute right-7 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-xs">
+          <p>New</p>
         </span>
       ) : null}
 

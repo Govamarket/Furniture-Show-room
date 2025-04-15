@@ -31,7 +31,7 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Stylish cafe chair",
-      isNew: true,
+      newProduct: true,
     },
 
     {
@@ -49,6 +49,77 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Outdoor bar table and stool",
+      newProduct: true,
+    },
+
+    {
+      img: palorSofa,
+      name: "Pinky",
+      price: "$199",
+      discount: "$50",
+      description: "Night Lamp",
+      hasDiscount: true,
+    },
+
+    {
+      img: latternLap,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      newProduct: true,
+    },
+
+    {
+      img: brownSofa,
+      name: "Muggo",
+      price: "$199",
+      discount: "$50",
+      description: "Small mug",
+      hasDiscount: true,
+    },
+
+    {
+      img: roomSofa,
+      name: "Potty",
+      price: "$199",
+      discount: "$50",
+      description: "Minimalist flower pot",
+    },
+
+    {
+      img: tableBar,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      hasDiscount: true,
+    },
+
+    {
+      img: sofaBar,
+      name: "Leviosa",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: washBase,
+      name: "Lolito",
+      price: "$199",
+      discount: "$50",
+      description: "Luxury big sofa",
+      hasDiscount: true,
+    },
+
+    {
+      img: bigSofa,
+      name: "Respira",
+      price: "$199",
+      discount: "$50",
+      description: "Outdoor bar table and stool",
+      newProduct: true,
     },
 
     {
@@ -75,6 +146,7 @@ const Shop = () => {
       discount: "$50",
       description: "Small mug",
       hasDiscount: true,
+      newProduct: true,
     },
 
     {
@@ -84,7 +156,345 @@ const Shop = () => {
       discount: "$50",
       description: "Minimalist flower pot",
     },
+    {
+      img: tableBar,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      hasDiscount: true,
+    },
 
+    {
+      img: sofaBar,
+      name: "Leviosa",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      hasDiscount: true,
+    },
+
+    {
+      img: washBase,
+      name: "Lolito",
+      price: "$199",
+      discount: "$50",
+      description: "Luxury big sofa",
+      newProduct: true,
+    },
+
+    {
+      img: bigSofa,
+      name: "Respira",
+      price: "$199",
+      discount: "$50",
+      description: "Outdoor bar table and stool",
+      hasDiscount: true,
+    },
+
+    {
+      img: palorSofa,
+      name: "Pinky",
+      price: "$199",
+      discount: "$50",
+      description: "Night Lamp",
+    },
+
+    {
+      img: latternLap,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      newProduct: true,
+    },
+
+    {
+      img: brownSofa,
+      name: "Muggo",
+      price: "$199",
+      discount: "$50",
+      description: "Small mug",
+      hasDiscount: true,
+    },
+
+    {
+      img: roomSofa,
+      name: "Potty",
+      price: "$199",
+      discount: "$50",
+      description: "Minimalist flower pot",
+      newProduct: true,
+    },
+    {
+      img: tableBar,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: sofaBar,
+      name: "Leviosa",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      hasDiscount: true,
+    },
+
+    {
+      img: washBase,
+      name: "Lolito",
+      price: "$199",
+      discount: "$50",
+      description: "Luxury big sofa",
+    },
+
+    {
+      img: bigSofa,
+      name: "Respira",
+      price: "$199",
+      discount: "$50",
+      description: "Outdoor bar table and stool",
+      newProduct: true,
+    },
+
+    {
+      img: palorSofa,
+      name: "Pinky",
+      price: "$199",
+      discount: "$50",
+      description: "Night Lamp",
+    },
+
+    {
+      img: latternLap,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      hasDiscount: true,
+    },
+
+    {
+      img: brownSofa,
+      name: "Muggo",
+      price: "$199",
+      discount: "$50",
+      description: "Small mug",
+      newProduct: true,
+    },
+
+    {
+      img: roomSofa,
+      name: "Potty",
+      price: "$199",
+      discount: "$50",
+      description: "Minimalist flower pot",
+    },
+    {
+      img: tableBar,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: sofaBar,
+      name: "Leviosa",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: washBase,
+      name: "Lolito",
+      price: "$199",
+      discount: "$50",
+      description: "Luxury big sofa",
+    },
+
+    {
+      img: bigSofa,
+      name: "Respira",
+      price: "$199",
+      discount: "$50",
+      description: "Outdoor bar table and stool",
+    },
+
+    {
+      img: palorSofa,
+      name: "Pinky",
+      price: "$199",
+      discount: "$50",
+      description: "Night Lamp",
+      newProduct: true,
+    },
+
+    {
+      img: latternLap,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      hasDiscount: true,
+    },
+
+    {
+      img: brownSofa,
+      name: "Muggo",
+      price: "$199",
+      discount: "$50",
+      description: "Small mug",
+      hasDiscount: true,
+    },
+
+    {
+      img: roomSofa,
+      name: "Potty",
+      price: "$199",
+      discount: "$50",
+      description: "Minimalist flower pot",
+    },
+    {
+      img: tableBar,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: sofaBar,
+      name: "Leviosa",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: washBase,
+      name: "Lolito",
+      price: "$199",
+      discount: "$50",
+      description: "Luxury big sofa",
+      newProduct: true,
+    },
+
+    {
+      img: bigSofa,
+      name: "Respira",
+      price: "$199",
+      discount: "$50",
+      description: "Outdoor bar table and stool",
+    },
+
+    {
+      img: palorSofa,
+      name: "Pinky",
+      price: "$199",
+      discount: "$50",
+      description: "Night Lamp",
+      hasDiscount: true,
+    },
+
+    {
+      img: latternLap,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      newProduct: true,
+    },
+
+    {
+      img: brownSofa,
+      name: "Muggo",
+      price: "$199",
+      discount: "$50",
+      description: "Small mug",
+      hasDiscount: true,
+    },
+
+    {
+      img: roomSofa,
+      name: "Potty",
+      price: "$199",
+      discount: "$50",
+      description: "Minimalist flower pot",
+      newProduct: true,
+    },
+    {
+      img: tableBar,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      newProduct: true,
+    },
+
+    {
+      img: sofaBar,
+      name: "Leviosa",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: washBase,
+      name: "Lolito",
+      price: "$199",
+      discount: "$50",
+      description: "Luxury big sofa",
+      newProduct: true,
+    },
+
+    {
+      img: bigSofa,
+      name: "Respira",
+      price: "$199",
+      discount: "$50",
+      description: "Outdoor bar table and stool",
+      hasDiscount: true,
+    },
+
+    {
+      img: palorSofa,
+      name: "Pinky",
+      price: "$199",
+      discount: "$50",
+      description: "Night Lamp",
+    },
+
+    {
+      img: latternLap,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      newProduct: true,
+    },
+
+    {
+      img: brownSofa,
+      name: "Muggo",
+      price: "$199",
+      discount: "$50",
+      description: "Small mug",
+    },
+
+    {
+      img: roomSofa,
+      name: "Potty",
+      price: "$199",
+      discount: "$50",
+      description: "Minimalist flower pot",
+      newProduct: true,
+    },
     {
       img: tableBar,
       name: "Syltherine",
@@ -142,7 +552,7 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Small mug",
-      hasDiscount: true,
+      newProduct: true,
     },
 
     {
@@ -167,6 +577,74 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Stylish cafe chair",
+    },
+
+    {
+      img: washBase,
+      name: "Lolito",
+      price: "$199",
+      discount: "$50",
+      description: "Luxury big sofa",
+      newProduct: true,
+    },
+
+    {
+      img: bigSofa,
+      name: "Respira",
+      price: "$199",
+      discount: "$50",
+      description: "Outdoor bar table and stool",
+      newProduct: true,
+    },
+
+    {
+      img: palorSofa,
+      name: "Pinky",
+      price: "$199",
+      discount: "$50",
+      description: "Night Lamp",
+    },
+
+    {
+      img: latternLap,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      newProduct: true,
+    },
+
+    {
+      img: brownSofa,
+      name: "Muggo",
+      price: "$199",
+      discount: "$50",
+      description: "Small mug",
+      hasDiscount: true,
+    },
+
+    {
+      img: roomSofa,
+      name: "Potty",
+      price: "$199",
+      discount: "$50",
+      description: "Minimalist flower pot",
+      newProduct: true,
+    },
+    {
+      img: tableBar,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: sofaBar,
+      name: "Leviosa",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
       hasDiscount: true,
     },
 
@@ -184,6 +662,75 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Outdoor bar table and stool",
+      newProduct: true,
+    },
+
+    {
+      img: palorSofa,
+      name: "Pinky",
+      price: "$199",
+      discount: "$50",
+      description: "Night Lamp",
+      hasDiscount: true,
+    },
+
+    {
+      img: latternLap,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      newProduct: true,
+    },
+
+    {
+      img: brownSofa,
+      name: "Muggo",
+      price: "$199",
+      discount: "$50",
+      description: "Small mug",
+    },
+
+    {
+      img: roomSofa,
+      name: "Potty",
+      price: "$199",
+      discount: "$50",
+      description: "Minimalist flower pot",
+      hasDiscount: true,
+    },
+    {
+      img: tableBar,
+      name: "Syltherine",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+      newProduct: true,
+    },
+
+    {
+      img: sofaBar,
+      name: "Leviosa",
+      price: "$199",
+      discount: "$50",
+      description: "Stylish cafe chair",
+    },
+
+    {
+      img: washBase,
+      name: "Lolito",
+      price: "$199",
+      discount: "$50",
+      description: "Luxury big sofa",
+      newProduct: true,
+    },
+
+    {
+      img: bigSofa,
+      name: "Respira",
+      price: "$199",
+      discount: "$50",
+      description: "Outdoor bar table and stool",
       hasDiscount: true,
     },
 
@@ -201,6 +748,7 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Stylish cafe chair",
+      hasDiscount: true,
     },
 
     {
@@ -209,6 +757,7 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Small mug",
+      newProduct: true,
     },
 
     {
@@ -217,510 +766,7 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Minimalist flower pot",
-    },
-    {
-      img: tableBar,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: sofaBar,
-      name: "Leviosa",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: washBase,
-      name: "Lolito",
-      price: "$199",
-      discount: "$50",
-      description: "Luxury big sofa",
-    },
-
-    {
-      img: bigSofa,
-      name: "Respira",
-      price: "$199",
-      discount: "$50",
-      description: "Outdoor bar table and stool",
-    },
-
-    {
-      img: palorSofa,
-      name: "Pinky",
-      price: "$199",
-      discount: "$50",
-      description: "Night Lamp",
-    },
-
-    {
-      img: latternLap,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: brownSofa,
-      name: "Muggo",
-      price: "$199",
-      discount: "$50",
-      description: "Small mug",
-    },
-
-    {
-      img: roomSofa,
-      name: "Potty",
-      price: "$199",
-      discount: "$50",
-      description: "Minimalist flower pot",
-    },
-    {
-      img: tableBar,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: sofaBar,
-      name: "Leviosa",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: washBase,
-      name: "Lolito",
-      price: "$199",
-      discount: "$50",
-      description: "Luxury big sofa",
-    },
-
-    {
-      img: bigSofa,
-      name: "Respira",
-      price: "$199",
-      discount: "$50",
-      description: "Outdoor bar table and stool",
-    },
-
-    {
-      img: palorSofa,
-      name: "Pinky",
-      price: "$199",
-      discount: "$50",
-      description: "Night Lamp",
-    },
-
-    {
-      img: latternLap,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: brownSofa,
-      name: "Muggo",
-      price: "$199",
-      discount: "$50",
-      description: "Small mug",
-    },
-
-    {
-      img: roomSofa,
-      name: "Potty",
-      price: "$199",
-      discount: "$50",
-      description: "Minimalist flower pot",
-    },
-    {
-      img: tableBar,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: sofaBar,
-      name: "Leviosa",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: washBase,
-      name: "Lolito",
-      price: "$199",
-      discount: "$50",
-      description: "Luxury big sofa",
-    },
-
-    {
-      img: bigSofa,
-      name: "Respira",
-      price: "$199",
-      discount: "$50",
-      description: "Outdoor bar table and stool",
-    },
-
-    {
-      img: palorSofa,
-      name: "Pinky",
-      price: "$199",
-      discount: "$50",
-      description: "Night Lamp",
-    },
-
-    {
-      img: latternLap,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: brownSofa,
-      name: "Muggo",
-      price: "$199",
-      discount: "$50",
-      description: "Small mug",
-    },
-
-    {
-      img: roomSofa,
-      name: "Potty",
-      price: "$199",
-      discount: "$50",
-      description: "Minimalist flower pot",
-    },
-    {
-      img: tableBar,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: sofaBar,
-      name: "Leviosa",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: washBase,
-      name: "Lolito",
-      price: "$199",
-      discount: "$50",
-      description: "Luxury big sofa",
-    },
-
-    {
-      img: bigSofa,
-      name: "Respira",
-      price: "$199",
-      discount: "$50",
-      description: "Outdoor bar table and stool",
-    },
-
-    {
-      img: palorSofa,
-      name: "Pinky",
-      price: "$199",
-      discount: "$50",
-      description: "Night Lamp",
-    },
-
-    {
-      img: latternLap,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: brownSofa,
-      name: "Muggo",
-      price: "$199",
-      discount: "$50",
-      description: "Small mug",
-    },
-
-    {
-      img: roomSofa,
-      name: "Potty",
-      price: "$199",
-      discount: "$50",
-      description: "Minimalist flower pot",
-    },
-    {
-      img: tableBar,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: sofaBar,
-      name: "Leviosa",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: washBase,
-      name: "Lolito",
-      price: "$199",
-      discount: "$50",
-      description: "Luxury big sofa",
-    },
-
-    {
-      img: bigSofa,
-      name: "Respira",
-      price: "$199",
-      discount: "$50",
-      description: "Outdoor bar table and stool",
-    },
-
-    {
-      img: palorSofa,
-      name: "Pinky",
-      price: "$199",
-      discount: "$50",
-      description: "Night Lamp",
-    },
-
-    {
-      img: latternLap,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: brownSofa,
-      name: "Muggo",
-      price: "$199",
-      discount: "$50",
-      description: "Small mug",
-    },
-
-    {
-      img: roomSofa,
-      name: "Potty",
-      price: "$199",
-      discount: "$50",
-      description: "Minimalist flower pot",
-    },
-    {
-      img: tableBar,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: sofaBar,
-      name: "Leviosa",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: washBase,
-      name: "Lolito",
-      price: "$199",
-      discount: "$50",
-      description: "Luxury big sofa",
-    },
-
-    {
-      img: bigSofa,
-      name: "Respira",
-      price: "$199",
-      discount: "$50",
-      description: "Outdoor bar table and stool",
-    },
-
-    {
-      img: palorSofa,
-      name: "Pinky",
-      price: "$199",
-      discount: "$50",
-      description: "Night Lamp",
-    },
-
-    {
-      img: latternLap,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: brownSofa,
-      name: "Muggo",
-      price: "$199",
-      discount: "$50",
-      description: "Small mug",
-    },
-
-    {
-      img: roomSofa,
-      name: "Potty",
-      price: "$199",
-      discount: "$50",
-      description: "Minimalist flower pot",
-    },
-    {
-      img: tableBar,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: sofaBar,
-      name: "Leviosa",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: washBase,
-      name: "Lolito",
-      price: "$199",
-      discount: "$50",
-      description: "Luxury big sofa",
-    },
-
-    {
-      img: bigSofa,
-      name: "Respira",
-      price: "$199",
-      discount: "$50",
-      description: "Outdoor bar table and stool",
-    },
-
-    {
-      img: palorSofa,
-      name: "Pinky",
-      price: "$199",
-      discount: "$50",
-      description: "Night Lamp",
-    },
-
-    {
-      img: latternLap,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: brownSofa,
-      name: "Muggo",
-      price: "$199",
-      discount: "$50",
-      description: "Small mug",
-    },
-
-    {
-      img: roomSofa,
-      name: "Potty",
-      price: "$199",
-      discount: "$50",
-      description: "Minimalist flower pot",
-    },
-    {
-      img: tableBar,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: sofaBar,
-      name: "Leviosa",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: washBase,
-      name: "Lolito",
-      price: "$199",
-      discount: "$50",
-      description: "Luxury big sofa",
-    },
-
-    {
-      img: bigSofa,
-      name: "Respira",
-      price: "$199",
-      discount: "$50",
-      description: "Outdoor bar table and stool",
-    },
-
-    {
-      img: palorSofa,
-      name: "Pinky",
-      price: "$199",
-      discount: "$50",
-      description: "Night Lamp",
-    },
-
-    {
-      img: latternLap,
-      name: "Syltherine",
-      price: "$199",
-      discount: "$50",
-      description: "Stylish cafe chair",
-    },
-
-    {
-      img: brownSofa,
-      name: "Muggo",
-      price: "$199",
-      discount: "$50",
-      description: "Small mug",
-    },
-
-    {
-      img: roomSofa,
-      name: "Potty",
-      price: "$199",
-      discount: "$50",
-      description: "Minimalist flower pot",
+      newProduct: true,
     },
   ];
 
@@ -808,6 +854,7 @@ const Shop = () => {
               discount={item.discount}
               price={item.price}
               hasDiscount={item.hasDiscount}
+              newProduct={item.newProduct}
             />
           );
         })}
