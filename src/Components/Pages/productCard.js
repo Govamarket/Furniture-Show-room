@@ -24,7 +24,7 @@ const ProductCard = ({
         </span>
       ) : null}
 
-      <span>
+      <span className="font-bold">
         <p>{name}</p>
       </span>
 

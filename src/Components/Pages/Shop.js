@@ -10,7 +10,6 @@ import palorSofa from "./../../Asset/sopls.png";
 import latternLap from "./../../Asset/lap.png";
 import brownSofa from "./../../Asset/sof.png";
 import roomSofa from "./../../Asset/solf.png";
-import OurProduct from "./OurProduct";
 import ProductCard from "./productCard";
 
 const Shop = () => {
