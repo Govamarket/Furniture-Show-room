@@ -292,6 +292,7 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Minimalist flower pot",
+      hasDiscount: true,
     },
     {
       img: tableBar,
@@ -299,6 +300,7 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Stylish cafe chair",
+      newProduct: true,
     },
 
     {
@@ -315,6 +317,7 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Luxury big sofa",
+      newProduct: true,
     },
 
     {
@@ -323,6 +326,7 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Outdoor bar table and stool",
+      newProduct: true,
     },
 
     {
@@ -358,6 +362,7 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Minimalist flower pot",
+      hasDiscount: true,
     },
     {
       img: tableBar,
@@ -365,6 +370,7 @@ const Shop = () => {
       price: "$199",
       discount: "$50",
       description: "Stylish cafe chair",
+      newProduct: true,
     },
 
     {
