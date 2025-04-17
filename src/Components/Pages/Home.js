@@ -88,10 +88,6 @@ const Home = () => {
       <section>
         <FuniroFurniture />
       </section>
-
-      <section>
-        <ProductDetail />
-      </section>
     </div>
   );
 };

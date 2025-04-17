@@ -1,5 +1,6 @@
 import React from "react";
 import "./Shop.css";
+import { Link } from "react-router-dom";
 import { FaFilter, FaList, FaTh } from "react-icons/fa";
 import { FaGreaterThan } from "react-icons/fa6";
 import tableBar from "./../../Asset/solfd.png";
@@ -272,14 +273,16 @@ const Shop = () => {
       <section className="flex justify-evenly mt-10 gap-x-1 gap-y-3 md: flex-wrap">
         {products.map((item, index) => {
           return (
-            <ProductCard
-              name={item.name}
-              img={item.img}
-              discount={item.discount}
-              price={item.price}
-              hasDiscount={item.hasDiscount}
-              newProduct={item.newProduct}
-            />
+            <Link to="/product-details">
+              <ProductCard
+                name={item.name}
+                img={item.img}
+                discount={item.discount}
+                price={item.price}
+                hasDiscount={item.hasDiscount}
+                newProduct={item.newProduct}
+              />
+            </Link>
           );
         })}
       </section>

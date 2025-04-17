@@ -18,11 +18,18 @@ const ProductDetail = () => {
         {/* Image section */}
         <div className="flex gap-4">
           <div className="flex flex-col gap-4">
-            {[1, 2, 3, 4].map((img, idx) => (
-              <div key={idx} className="w-20 h-20 bg-[#f3ede5] rounded-lg" />
+            {[1, 2, 3, 4].map((img, index) => (
+              <img
+                key={index}
+                src={inline}
+                className="w-20 h-20 bg-[#f3ede5] rounded-lg"
+              />
             ))}
           </div>
-          <div className="flex-1 bg-[#f3ede5] rounded-lg h-[400px]" />
+          <img
+            src={Center}
+            className="flex-1 bg-[#f3ede5] rounded-lg h-[400px]"
+          />
         </div>
 
         {/* Info section */}
