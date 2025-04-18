@@ -5,6 +5,7 @@ import inline from "./../../Asset/inline.png";
 // import inlinef from "./../../Asset/inlinef.png";
 // import inlineT from "../../Asset/inliner.png";
 import ProductTabs from "./ProductTab";
+import RelateProduct from "./RelateProduct";
 
 const ProductDetail = () => {
   return (
@@ -124,6 +125,10 @@ const ProductDetail = () => {
       </div>
       <section>
         <ProductTabs />
+      </section>
+
+      <section>
+        <RelateProduct />
       </section>
     </div>
   );
