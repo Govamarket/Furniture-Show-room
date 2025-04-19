@@ -6,6 +6,7 @@ import inline from "./../../Asset/inline.png";
 // import inlineT from "../../Asset/inliner.png";
 import ProductTabs from "./ProductTab";
 import RelateProduct from "./RelateProduct";
+// import ShopCart from "./ShopCart";
 
 const ProductDetail = () => {
   return (

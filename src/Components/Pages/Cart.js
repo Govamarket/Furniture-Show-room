@@ -1,10 +1,11 @@
 import React from "react";
 import { FaCartPlus } from "react-icons/fa";
+import ShopCart from "./ShopCart";
 
 const Cart = () => {
   return (
-    <div>
-      <h1>This is the cart page</h1>
+    <div className="optional:drop-shadow-md">
+      <ShopCart />
     </div>
   );
 };

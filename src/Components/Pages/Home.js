@@ -6,7 +6,6 @@ import bedRoom from "./../../Asset/bedroom.png";
 import OurProduct from "./OurProduct";
 import Room from "./Room";
 import FuniroFurniture from "./FuniroFurniture";
-import ProductDetail from "./ProductDetail";
 
 const Home = () => {
   return (
