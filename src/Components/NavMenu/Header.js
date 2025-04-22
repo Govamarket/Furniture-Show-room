@@ -110,13 +110,17 @@ const Header = () => {
                 Rs. {subtotal.toLocaleString()}
               </span>
             </div>
-            <div className="mt-6 flex gap-2">
-              <button variant="outline" className="w-full border">
-                Cart
-              </button>
-              <button className="w-full border">Checkout</button>
+            <div className="mt-6 flex justify-evenly gap-2">
+              <Link to="/cart">
+                <button variant="outline" className="w-full p-2 border">
+                  Cart
+                </button>
+              </Link>
+              <Link to="/cart">
+                <button className="w-full border p-2">Checkout</button>
+              </Link>
               <Link to="/product-comparison">
-                <button variant="outline" className="w-full border">
+                <button variant="outline" className="w-full border p-2">
                   Comparison
                 </button>
               </Link>

@@ -1,5 +1,6 @@
 import { Trophy, ShieldCheck, Truck, Headphones } from "lucide-react"; // Icons
 import React from "react";
+// import { Link } from "react-router-dom";
 
 const InfoBanner = () => {
   const features = [
