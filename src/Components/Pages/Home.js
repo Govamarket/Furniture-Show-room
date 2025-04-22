@@ -6,6 +6,7 @@ import bedRoom from "./../../Asset/bedroom.png";
 import OurProduct from "../Products/OurProduct";
 import Room from "./Room";
 import FuniroFurniture from "./FuniroFurniture";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -34,7 +35,10 @@ const Home = () => {
                 type="button"
                 className="button rounded-xl flex justify-center items-center pt-1 p-1 w-40 h-14"
               >
-                <p>Buy Now</p>
+                <Link to="/shop">
+                  {" "}
+                  <p>Buy Now</p>
+                </Link>
               </button>
             </div>
           </div>
