@@ -6,7 +6,7 @@ import { CgProfile } from "react-icons/cg";
 import { CiHeart } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
 import Nav from "./Nav";
-import Logo from "./Pages/Logo";
+import Logo from "../Pages/Logo";
 import { X } from "lucide-react";
 
 const Header = () => {
