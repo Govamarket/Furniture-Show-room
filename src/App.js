@@ -12,7 +12,8 @@ import Like from "./Components/Pages/Like";
 import Profile from "./Components/Pages/Profile";
 import Search from "./Components/Pages/Search";
 import Shop from "./Components/Pages/Shop";
-import ProductDetail from "./Components/Pages/ProductDetail";
+import ProductDetail from "./Components/Products/ProductDetail";
+import ProductComparison from "./Components/Products/ProductCompare";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/search" element={<Search />} />{" "}
           <Route path="/product-details" element={<ProductDetail />} />
+          <Route path="/product-comparison" element={<ProductComparison />} />
         </Routes>
         <Footer />
       </Router>

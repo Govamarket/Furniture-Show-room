@@ -3,7 +3,7 @@ import "./Home.css";
 import diningTable from "./../../Asset/dining.png";
 import livingIcon from "./../../Asset/living.png";
 import bedRoom from "./../../Asset/bedroom.png";
-import OurProduct from "./OurProduct";
+import OurProduct from "../Products/OurProduct";
 import Room from "./Room";
 import FuniroFurniture from "./FuniroFurniture";
 

@@ -11,7 +11,7 @@ import palorSofa from "./../../Asset/sopls.png";
 import latternLap from "./../../Asset/lap.png";
 import brownSofa from "./../../Asset/sof.png";
 import roomSofa from "./../../Asset/solf.png";
-import ProductCard from "./productCard";
+import ProductCard from "../Products/productCard";
 import Pagination from "./Pagination";
 import InfoBanner from "./InfoBanner";
 

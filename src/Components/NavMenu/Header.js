@@ -8,6 +8,7 @@ import { CiSearch } from "react-icons/ci";
 import Nav from "./Nav";
 import Logo from "../Pages/Logo";
 import { X } from "lucide-react";
+import ProductComparison from "../Products/ProductCompare";
 
 const Header = () => {
   const [openCart, setOpenCart] = useState(false);
@@ -114,9 +115,11 @@ const Header = () => {
                 Cart
               </button>
               <button className="w-full border">Checkout</button>
-              <button variant="outline" className="w-full border">
-                Comparison
-              </button>
+              <Link to="/product-comparison">
+                <button variant="outline" className="w-full border">
+                  Comparison
+                </button>
+              </Link>
             </div>
           </div>
         </div>
