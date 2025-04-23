@@ -86,7 +86,7 @@ const ProductSpecification = () => {
         <h2 className="text-xl font-bold mb-4">Warranty</h2>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
-            <tbody>
+            <tbody className="font-normal">
               <TableRow
                 label="Warranty Summary"
                 values={[
