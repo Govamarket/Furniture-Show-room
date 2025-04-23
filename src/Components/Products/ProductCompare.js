@@ -5,6 +5,7 @@ import logoManu from "./../../Asset/MeuLogos.png";
 import CenterSofa from "./../../Asset/center.png";
 import BlackSofa from "./../../Asset/inlinef.png";
 import ProductSpecification from "./ProductSpecification";
+import InfoBanner from "../Pages/InfoBanner";
 
 const ProductComparison = () => {
   const product = [
@@ -102,6 +103,10 @@ const ProductComparison = () => {
       </div>
       <section>
         <ProductSpecification />
+      </section>
+
+      <section>
+        <InfoBanner />
       </section>
     </div>
   );
