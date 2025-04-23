@@ -3,8 +3,6 @@ import ProductImg from "./../../Asset/productc.png";
 import logoManu from "./../../Asset/MeuLogos.png";
 import CenterSofa from "./../../Asset/center.png";
 import BlackSofa from "./../../Asset/inlinef.png";
-import { Star } from "lucide-react"; // Icons
-import { FaStarHalfStroke } from "react-icons/fa6";
 
 const ProductComparison = () => {
   const product = [

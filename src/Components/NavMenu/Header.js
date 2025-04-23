@@ -8,7 +8,8 @@ import { CiSearch } from "react-icons/ci";
 import Nav from "./Nav";
 import Logo from "../Pages/Logo";
 import { X } from "lucide-react";
-import ProductComparison from "../Products/ProductCompare";
+import CenterSofa from "./../../Asset/center.png";
+import BlackSofa from "./../../Asset/inlinef.png";
 
 const Header = () => {
   const [openCart, setOpenCart] = useState(false);
@@ -16,14 +17,14 @@ const Header = () => {
     {
       id: 1,
       name: "Asgaard sofa",
-      image: "/images/asgaard.jpg",
+      image: CenterSofa,
       price: 250000,
       quantity: 1,
     },
     {
       id: 2,
       name: "Casaliving Wood",
-      image: "/images/casaliving.jpg",
+      image: CenterSofa,
       price: 270000,
       quantity: 1,
     },
