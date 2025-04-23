@@ -25,29 +25,24 @@ const ProductComparison = () => {
       date: "99",
     },
   ];
-  const renderStars = (rating) => {
-    const Star = Math.floor(rating);
-    const FaStarHalfStroke = rating % 1 >= 0.5;
-  };
+
   return (
-    <div>
+    <div className="w-full">
+      {/* Header Banner */}
       <div
         className="relative w-full h-64 bg-cover bg-center"
-        styl
-        e={{
-          backgroundImage: `url(
-        ${ProductImg}
-        )`,
+        style={{
+          backgroundImage: `url(${ProductImg})`,
         }}
       >
-        <div className="absolute inset-0 bg-white bg-opacity-70 flex flex-col justify-center items-center">
-          {/* Logo or Icon */}
+        <div className="absolute inset-0 bg-white bg-opacity-70 flex flex-col justify-center items-center text-center p-4">
+          {/* Logo */}
           <div className="mb-2">
-            <img src={logoManu} />
+            <img src={logoManu} alt="Logo" className="h-12 md:h-16" />
           </div>
 
           {/* Title */}
-          <h1 className="text-3xl font-semibold text-black">
+          <h1 className="text-2xl md:text-3xl font-semibold text-black">
             Product Comparison
           </h1>
 
@@ -60,42 +55,52 @@ const ProductComparison = () => {
         </div>
       </div>
 
-      <div className="flex justify-center gap-6 items-center flex-wrap">
-        <div className="mb-4 text-xs text-black font-bold  cursor-pointer">
+      {/* CTA and Products */}
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        {/* CTA */}
+        <div className="text-center mb-6 text-xs text-black font-bold cursor-pointer">
           Go to Product page for more Products
           <br />
-          <span className="font-semibold border-b-2">View More</span>
+          <span className="font-semibold border-b-2 border-black">
+            View More
+          </span>
         </div>
-        {product.map((product, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-2xl p-4  shadow-md text-center w-50 gap-6"
-          >
-            <img
-              src={product.image}
-              alt={product.name}
-              className="rounded-lg mb-3 w-full size-40"
-            />
-            <h4 className="text-lg font-semibold mb-1">{product.name}</h4>
-            <p className="text-gray-800 font-semibold mb-1">{product.price}</p>
-            <div className="text-yellow-500 text-sm mb-1">
-              {"⭐".repeat(Math.floor(product.rating))} {product.rating}
-            </div>
-            <div className="text-gray-500 text-xs">
-              {product.reviews} Reviews
-            </div>
-          </div>
-        ))}
 
-        <div className="w-full lg:w-52">
-          <h4 className="text-lg font-semibold mb-2">Add A Product</h4>
-          <button className="bg-yellow-700 text-white px-4 py-2 rounded-md w-full">
-            Choose a Product ▼
-          </button>
+        {/* Product Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {product.map((product, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl p-4 shadow-md text-center"
+            >
+              <img
+                src={product.image}
+                alt={product.name}
+                className="rounded-lg mb-3 mx-auto w-full max-h-40 object-contain"
+              />
+              <h4 className="text-lg font-semibold mb-1">{product.name}</h4>
+              <p className="text-gray-800 font-semibold mb-1">
+                {product.price}
+              </p>
+              <div className="text-yellow-500 text-sm mb-1">
+                {"⭐".repeat(Math.floor(product.rating))} {product.rating}
+              </div>
+              <div className="text-gray-500 text-xs">
+                {product.reviews} Reviews
+              </div>
+            </div>
+          ))}
+
+          {/* Add Product Button */}
+          <div className="bg-white rounded-2xl p-4 shadow-md text-center">
+            <h4 className="text-lg font-semibold mb-2">Add A Product</h4>
+            <button className="bg-yellow-700 text-white px-4 py-2 rounded-md w-full">
+              Choose a Product ▼
+            </button>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
 export default ProductComparison;
