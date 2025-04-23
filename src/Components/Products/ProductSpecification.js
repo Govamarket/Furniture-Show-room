@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProductSpecification.css";
 
 const ProductSpecification = () => {
   return (

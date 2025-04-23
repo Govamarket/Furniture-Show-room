@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProductImg from "./../../Asset/productc.png";
 import logoManu from "./../../Asset/MeuLogos.png";
 import CenterSofa from "./../../Asset/center.png";
@@ -61,7 +62,7 @@ const ProductComparison = () => {
           Go to Product page for more Products
           <br />
           <span className="font-semibold border-b-2 border-black">
-            View More
+            <Link to="/shop"> View More</Link>
           </span>
         </div>
 
