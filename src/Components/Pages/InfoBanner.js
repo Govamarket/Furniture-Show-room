@@ -27,7 +27,7 @@ const InfoBanner = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center gap-10 py-6 px-4 bg-amber-50 border border-dashed border-blue-200">
+    <div className="flex justify-center items-center gap-10 py-6 px-4 bg-amber-50 border">
       {features.map((item, index) => (
         <div key={index} className="flex flex-col items-center text-center">
           <div className="text-black">{item.icon}</div>
