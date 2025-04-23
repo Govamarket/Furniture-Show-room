@@ -3,6 +3,7 @@ import ProductImg from "./../../Asset/productc.png";
 import logoManu from "./../../Asset/MeuLogos.png";
 import CenterSofa from "./../../Asset/center.png";
 import BlackSofa from "./../../Asset/inlinef.png";
+import ProductSpecification from "./ProductSpecification";
 
 const ProductComparison = () => {
   const product = [
@@ -98,6 +99,9 @@ const ProductComparison = () => {
           </div>
         </div>
       </div>
+      <section>
+        <ProductSpecification />
+      </section>
     </div>
   );
 };
