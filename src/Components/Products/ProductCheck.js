@@ -1,6 +1,7 @@
 import React from "react";
 import ProductImg from "./../../Asset/productc.png";
 import logoManu from "./../../Asset/MeuLogos.png";
+import InfoBanner from "../Pages/InfoBanner";
 
 const ProductCheck = () => {
   const total = 250000;
@@ -131,6 +132,9 @@ const ProductCheck = () => {
           </div>
         </div>
       </div>
+      <section>
+        <InfoBanner />
+      </section>
     </div>
   );
 };

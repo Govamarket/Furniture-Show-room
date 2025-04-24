@@ -49,21 +49,21 @@ const Header = () => {
         <Nav />
         <div className="flex right-3 gap-6">
           {/* <Cart /> */}
-          <p onClick={handleOpenCart}>
-            <FaCartPlus className="font-bold size-5 text-stone-900" />
-          </p>
           <Link to="/profile">
             {" "}
             <CgProfile className="font-bold size-5 text-stone-900" />
-          </Link>
-          <Link to="/like">
-            {" "}
-            <CiHeart className="font-bold size-5 text-stone-900" />
           </Link>
           <Link to="/search">
             {" "}
             <CiSearch className="font-bold size-5 text-stone-900" />
           </Link>
+          <Link to="/like">
+            {" "}
+            <CiHeart className="font-bold size-5 text-stone-900" />
+          </Link>
+          <p onClick={handleOpenCart}>
+            <FaCartPlus className="font-bold size-5 text-stone-900" />
+          </p>
 
           <div className="block md:hidden">
             <Navigation />
