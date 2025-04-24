@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <div className=" container">
+      <div className=" container h-auto">
         <div className="content max-w-md   absolute right-1 top-40 text-white rounded-xl text-x p-4 h-auto">
           <div>
             <section className="text-black font-semibold text-x">
