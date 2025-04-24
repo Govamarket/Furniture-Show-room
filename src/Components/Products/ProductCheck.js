@@ -41,7 +41,8 @@ const ProductCheck = () => {
           <div className="w-full lg:w-2/3">
             <h2 className="text-xl font-semibold mb-6">Billing details</h2>
             <form className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-              <input placeholder="First name" className="p-3 border rounded" />
+              <input placeholder="First name" className="p-3 border rounded" />{" "}
+              <br />
               <input placeholder="Last name" className="p-3 border rounded" />
               <input
                 placeholder="Company name (optional)"
