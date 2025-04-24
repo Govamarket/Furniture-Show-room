@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProductImg from "./../../Asset/productc.png";
 import InfoBanner from "./InfoBanner";
 import logoManu from "./../../Asset/MeuLogos.png";
@@ -12,6 +12,7 @@ import Modernhome from "./../../Asset/Rea.png";
 import Coloroffice from "./../../Asset/Rep.png";
 
 const AboutPage = () => {
+  const [searchTerm, setSearchTerm] = useState("");
   const blogs = [
     {
       title: "Going all-in with minimalist design",
@@ -38,9 +39,17 @@ const AboutPage = () => {
     },
   ];
 
-  const inputSearch = [];
+  const categories = [
+    { name: "Credits", value: 2 },
+    { name: "Design", value: 8 },
+    { name: "Handmobile", value: 7 },
+    { name: "Interior", value: 1 },
+    { name: "Wood", value: 6 },
+  ];
 
-  const categories = ["Interior 1", "Decor 2", "Craft 3", "Art 4", "DIY 5"];
+  const filteredCategories = categories.filter((category) =>
+    category.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   const recentPosts = [
     {
@@ -135,44 +144,77 @@ const AboutPage = () => {
           </div>
 
           {/* Sidebar */}
-          <div className="w-full lg:w-1/3 space-y-10">
-            {/* Categories */}
-            <div>
-              <h4 className="text-lg font-semibold  mb-4">Categories</h4>
-              <ul className="space-y-2 text-gray-700">
-                {categories.map((cat, idx) => (
-                  <li
-                    key={idx}
-                    className="hover:text-yellow-600 cursor-pointer"
-                  >
-                    {cat}
-                  </li>
-                ))}
-              </ul>
+          <div className="max-w-md mx-auto p-6 font-sans">
+            <h1 className="text-2xl font-bold mb-6 text-gray-800">
+              Categories
+            </h1>
+
+            {/* Search Input */}
+            <div className="mb-6">
+              <input
+                type="text"
+                placeholder="Search categories..."
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
             </div>
 
-            {/* Recent Posts */}
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Recent Posts</h4>
-              <ul className="space-y-4">
-                {recentPosts.map((post, idx) => (
-                  <li key={idx} className="flex gap-3 items-start">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-16 h-16 object-cover rounded"
-                    />
-                    <div>
-                      <h5 className="text-sm font-medium">{post.title}</h5>
-                      <span className="text-xs text-gray-500">{post.date}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+            {/* Categories Table */}
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+              {filteredCategories.length > 0 ? (
+                <table className="w-full">
+                  <tbody>
+                    {filteredCategories.map((category, index) => (
+                      <tr
+                        key={category.name}
+                        className={`border-b border-gray-100 ${
+                          index === filteredCategories.length - 1
+                            ? ""
+                            : "border-b"
+                        }`}
+                      >
+                        <td className="py-4 px-6 text-gray-700 font-medium">
+                          {category.name}
+                        </td>
+                        <td className="py-4 px-6 text-gray-500 text-right">
+                          {category.value}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              ) : (
+                <div className="py-4 px-6 text-gray-500 text-center">
+                  No categories found matching your search.
+                </div>
+              )}
+              <div className="pt-5">
+                <h4 className="text-lg font-semibold mb-4">Recent Posts</h4>
+                <ul className="space-y-4">
+                  {recentPosts.map((post, idx) => (
+                    <li key={idx} className="flex gap-3 items-start">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-16 h-16 object-cover rounded"
+                      />
+                      <div>
+                        <h5 className="text-sm font-medium">{post.title}</h5>
+                        <span className="text-xs text-gray-500">
+                          {post.date}
+                        </span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      {/* Recent Posts */}
+
       <section>
         <InfoBanner />
       </section>

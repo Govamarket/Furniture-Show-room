@@ -49,7 +49,7 @@ const Header = () => {
         <Nav />
         <div className="flex right-3 gap-6">
           {/* <Cart /> */}
-          <Link to="/profile">
+          <Link to="/contact">
             {" "}
             <CgProfile className="font-bold size-5 text-stone-900" />
           </Link>
