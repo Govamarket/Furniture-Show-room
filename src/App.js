@@ -14,6 +14,7 @@ import Search from "./Components/Pages/Search";
 import Shop from "./Components/Pages/Shop";
 import ProductDetail from "./Components/Products/ProductDetail";
 import ProductComparison from "./Components/Products/ProductCompare";
+import ProductCheck from "./Components/Products/ProductCheck";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/search" element={<Search />} />{" "}
           <Route path="/product-details" element={<ProductDetail />} />
           <Route path="/product-comparison" element={<ProductComparison />} />
+          <Route path="/product-check" element={<ProductCheck />} />
         </Routes>
         <Footer />
       </Router>

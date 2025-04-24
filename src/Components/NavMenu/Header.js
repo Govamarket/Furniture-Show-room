@@ -117,7 +117,7 @@ const Header = () => {
                   Cart
                 </button>
               </Link>
-              <Link to="/cart">
+              <Link to="/product-check">
                 <button className="w-full border p-2">Checkout</button>
               </Link>
               <Link to="/product-comparison">
