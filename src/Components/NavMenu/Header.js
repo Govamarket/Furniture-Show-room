@@ -76,7 +76,11 @@ const Header = () => {
           <div className="w-full max-w-md bg-[#fff] p-6 shadow-xl rounded-md">
             <h2 className="text-xl font-semibold mb-4">Shopping Cart</h2>
 
-            <X size={20} onClick={handleOpenCart} />
+            <X
+              size={20}
+              onClick={handleOpenCart}
+              className="absolute right-10 top-7"
+            />
             <div className="divide-y">
               {cartItems.map((item) => (
                 <div
