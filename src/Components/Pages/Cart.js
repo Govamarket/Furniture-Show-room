@@ -8,12 +8,12 @@ const Cart = () => {
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row justify-between p-6 gap-6 bg-white min-h-screen">
+      <div className="flex flex-col md:flex-row justify-between gap-6 p-4 sm:p-6 bg-white min-h-screen">
         {/* Cart Table */}
-        <div className="w-full md:w-2/3">
-          <table className="w-full border-collapse">
+        <div className="w-full md:w-2/3 overflow-x-auto">
+          <table className="w-full border-collapse min-w-[600px]">
             <thead>
-              <tr className="bg-[#fdf6ef] text-left text-gray-700">
+              <tr className="bg-[#fdf6ef] text-left text-gray-700 text-sm sm:text-base">
                 <th className="py-3 px-4">Product</th>
                 <th className="py-3 px-4">Price</th>
                 <th className="py-3 px-4">Quantity</th>
@@ -22,7 +22,7 @@ const Cart = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="border-t">
+              <tr className="border-t text-sm sm:text-base">
                 {/* Product */}
                 <td className="flex items-center gap-4 py-4 px-4">
                   <img
@@ -43,7 +43,7 @@ const Cart = () => {
                   <input
                     type="number"
                     defaultValue={1}
-                    className="w-12 px-2 py-1 border rounded text-center"
+                    className="w-14 px-2 py-1 border rounded text-center"
                   />
                 </td>
 
@@ -62,7 +62,7 @@ const Cart = () => {
         </div>
 
         {/* Cart Totals */}
-        <div className="w-full md:w-1/3 bg-[#fdf6ef] p-6 rounded shadow-sm">
+        <div className="w-full md:w-1/3 bg-[#fdf6ef] p-6 rounded-md shadow-sm h-auto">
           <h2 className="text-lg font-semibold mb-4">Cart Totals</h2>
           <div className="flex justify-between mb-2 text-gray-700">
             <span>Subtotal</span>
@@ -78,6 +78,7 @@ const Cart = () => {
         </div>
       </div>
 
+      {/* Info Banner */}
       <section>
         <InfoBanner />
       </section>
