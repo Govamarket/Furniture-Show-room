@@ -15,26 +15,29 @@ import Shop from "./Components/Pages/Shop";
 import ProductDetail from "./Components/Products/ProductDetail";
 import ProductComparison from "./Components/Products/ProductCompare";
 import ProductCheck from "./Components/Products/ProductCheck";
+import { CartProvider } from "./Components/Pages/CartProvider";
 
 function App() {
   return (
     <div className="relative pb-10 min-h-screen flex-col">
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/like" element={<Like />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/search" element={<Search />} />{" "}
-          <Route path="/product-details" element={<ProductDetail />} />
-          <Route path="/product-comparison" element={<ProductComparison />} />
-          <Route path="/product-check" element={<ProductCheck />} />
-        </Routes>
-        <Footer />
+        <CartProvider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/like" element={<Like />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/search" element={<Search />} />{" "}
+            <Route path="/product-details" element={<ProductDetail />} />
+            <Route path="/product-comparison" element={<ProductComparison />} />
+            <Route path="/product-check" element={<ProductCheck />} />
+          </Routes>
+          <Footer />
+        </CartProvider>
       </Router>
     </div>
   );
