@@ -68,9 +68,9 @@ const Header = () => {
               {/* ... other icons ... */}
               <div className="relative">
                 <p onClick={handleOpenCart}>
-                  <FaCartPlus className="font-bold size-5 text-stone-900" />
+                  <FaCartPlus className="font-bold size-5 text-stone-900 cursor-pointer" />
                   {totalItems > 0 && (
-                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center cursor-pointer">
                       {totalItems > 99 ? "99+" : totalItems}
                     </span>
                   )}
