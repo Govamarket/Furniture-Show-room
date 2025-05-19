@@ -4,9 +4,7 @@ import { CiHeart } from "react-icons/ci";
 const Like = () => {
   return (
     <div>
-      <span>
-        <p>Like items</p>
-      </span>
+      <span></span>
     </div>
   );
 };

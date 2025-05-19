@@ -1,5 +1,5 @@
 import React from "react";
-import useCart from "../Pages/UseCart"; // adjust path based on your folder structure
+import { useCart } from "../Pages/UseCart"; // adjust path based on your folder structure
 
 const ProductCard = ({
   img,
@@ -33,7 +33,7 @@ const ProductCard = ({
       )}
 
       {newProduct && (
-        <span className="absolute left-4 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-xs">
+        <span className="absolute left-6 top-10 bg-green-500 p-2 rounded-full text-white flex items-center justify-center w-10 h-10 text-xs">
           New
         </span>
       )}
@@ -43,10 +43,10 @@ const ProductCard = ({
         <p className="text-sm text-gray-600">{description}</p>
 
         <div className="flex items-center gap-2 mt-2">
-          <span className="font-bold text-md text-black">₦{price}</span>
+          <span className="font-bold text-md text-black">{price}</span>
           {discount && (
             <span className="text-sm text-gray-400 line-through">
-              ₦{discount}
+              {discount}
             </span>
           )}
         </div>

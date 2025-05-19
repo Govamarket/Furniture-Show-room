@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navigation from "./Navigation";
 import { Link } from "react-router-dom";
 import { FaCartPlus } from "react-icons/fa";
@@ -9,10 +9,11 @@ import Nav from "./Nav";
 import Logo from "../Pages/Logo";
 import { X } from "lucide-react";
 import CenterSofa from "./../../Asset/center.png";
-import BlackSofa from "./../../Asset/inlinef.png";
+import { useCart } from "../Pages/UseCart";
 
 const Header = () => {
   const [openCart, setOpenCart] = useState(false);
+  const { totalItems } = useCart();
   const cartItems = [
     {
       id: 1,
@@ -61,15 +62,32 @@ const Header = () => {
             {" "}
             <CiHeart className="font-bold size-5 text-stone-900" />
           </Link>
-          <p onClick={handleOpenCart}>
-            <FaCartPlus className="font-bold size-5 text-stone-900" />
-          </p>
+          <div className="mx-auto flex justify-between items-center">
+            {/* ... other header content ... */}
+            <div className="flex right-3 gap-6">
+              {/* ... other icons ... */}
+              <div className="relative">
+                <p onClick={handleOpenCart}>
+                  <FaCartPlus className="font-bold size-5 text-stone-900" />
+                  {totalItems > 0 && (
+                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                      {totalItems > 99 ? "99+" : totalItems}
+                    </span>
+                  )}
+                </p>
+              </div>
+              {/* ... navigation ... */}
+            </div>
+          </div>
 
           <div className="block md:hidden">
             <Navigation />
           </div>
         </div>
       </div>
+
+      {/* Cart Indicator Component */}
+      {/* <CartProvider /> */}
 
       {openCart === true && (
         <div className="fixed items-start flex justify-end top-0 w-full z-10 h-screen bg-[#00000030]">
@@ -98,7 +116,7 @@ const Header = () => {
                       <p className="text-sm">
                         {item.quantity} x{" "}
                         <span className="text-yellow-600 font-semibold">
-                          Rs. {item.price.toLocaleString()}
+                          $. {item.price.toLocaleString()}
                         </span>
                       </p>
                     </div>
@@ -109,10 +127,11 @@ const Header = () => {
                 </div>
               ))}
             </div>
+
             <div className="mt-6 flex justify-between items-center text-lg font-semibold">
               <span>Subtotal</span>
               <span className="text-yellow-600">
-                Rs. {subtotal.toLocaleString()}
+                . {subtotal.toLocaleString()}
               </span>
             </div>
             <div className="mt-6 flex justify-evenly gap-2">

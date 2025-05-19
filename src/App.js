@@ -2,7 +2,6 @@ import "./App.css";
 import Footer from "./Components/Footer";
 import Header from "./Components/NavMenu/Header";
 // import Navigation from "./Components/Navigation";
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/AboutPage";
@@ -15,13 +14,13 @@ import Shop from "./Components/Pages/Shop";
 import ProductDetail from "./Components/Products/ProductDetail";
 import ProductComparison from "./Components/Products/ProductCompare";
 import ProductCheck from "./Components/Products/ProductCheck";
-import { CartProvider } from "./Components/Pages/CartProvider";
+import { CartProvider } from "./Components/Pages/UseCart";
 
 function App() {
   return (
     <div className="relative pb-10 min-h-screen flex-col">
-      <Router>
-        <CartProvider>
+      <CartProvider>
+        <Router>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -37,8 +36,8 @@ function App() {
             <Route path="/product-check" element={<ProductCheck />} />
           </Routes>
           <Footer />
-        </CartProvider>
-      </Router>
+        </Router>
+      </CartProvider>
     </div>
   );
 }

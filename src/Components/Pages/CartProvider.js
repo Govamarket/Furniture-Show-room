@@ -1,55 +1,23 @@
-import React, { createContext, useReducer } from "react";
+import React from "react";
+import { ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useCart } from "../Pages/UseCart"; // Adjust path based on your folder structure
 
-const CartContext = createContext();
+const CartIndicator = () => {
+  const { totalItems } = useCart();
 
-const initialState = {
-  cartItems: [],
+  return (
+    <Link to="/cart" className="relative">
+      <div className="flex items-center">
+        <ShoppingCart size={24} />
+        {totalItems > 0 && (
+          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+            {totalItems > 99 ? "99+" : totalItems}
+          </span>
+        )}
+      </div>
+    </Link>
+  );
 };
 
-const cartReducer = (state, action) => {
-  switch (action.type) {
-    case "ADD_TO_CART":
-      const itemExists = state.cartItems.find(
-        (item) => item.id === action.payload.id
-      );
-      if (itemExists) {
-        return {
-          ...state,
-          cartItems: state.cartItems.map((item) =>
-            item.id === action.payload.id
-              ? { ...item, quantity: item.quantity + 1 }
-              : item
-          ),
-        };
-      }
-      return {
-        ...state,
-        cartItems: [...state.cartItems, { ...action.payload, quantity: 1 }],
-      };
-
-    case "REMOVE_FROM_CART":
-      return {
-        ...state,
-        cartItems: state.cartItems.filter((item) => item.id !== action.payload),
-      };
-
-    case "CLEAR_CART":
-      return {
-        ...state,
-        cartItems: [],
-      };
-
-    default:
-      return state;
-  }
-};
-
-export const CartProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(cartReducer, initialState);
-
-  const value = { state, dispatch };
-
-  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
-};
-
-export default CartContext;
+export default CartIndicator;

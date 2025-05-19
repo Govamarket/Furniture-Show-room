@@ -43,7 +43,6 @@ const ProductCheck = () => {
             <h2 className="text-xl font-semibold mb-6">Billing details</h2>
             <form className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
               <input placeholder="First name" className="p-3 border rounded" />{" "}
-              <br />
               <input placeholder="Last name" className="p-3 border rounded" />
               <input
                 placeholder="Company name (optional)"
@@ -92,15 +91,15 @@ const ProductCheck = () => {
             <h2 className="text-xl font-semibold mb-4">Product</h2>
             <div className="flex justify-between text-sm mb-2 text-gray-700">
               <span>Agggard Sofa × 1</span>
-              <span>Rs. {total.toLocaleString()}</span>
+              <span>₦. {total.toLocaleString()}</span>
             </div>
             <div className="flex justify-between text-sm mb-2 text-gray-700">
               <span>Subtotal</span>
-              <span>Rs. {total.toLocaleString()}</span>
+              <span>₦. {total.toLocaleString()}</span>
             </div>
             <div className="flex justify-between font-semibold text-lg text-yellow-700 border-t border-gray-300 pt-4 mt-4">
               <span>Total</span>
-              <span>Rs. {total.toLocaleString()}</span>
+              <span>₦. {total.toLocaleString()}</span>
             </div>
 
             {/* Payment Options */}
