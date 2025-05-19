@@ -41,48 +41,97 @@ const ProductCheck = () => {
           {/* Billing Details */}
           <div className="w-full lg:w-2/3">
             <h2 className="text-xl font-semibold mb-6">Billing details</h2>
-            <form className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
-              <input placeholder="First name" className="p-3 border rounded" />{" "}
-              <input placeholder="Last name" className="p-3 border rounded" />
-              <input
-                placeholder="Company name (optional)"
-                className="p-3 border rounded col-span-2"
-              />
-              <select className="p-3 border rounded col-span-2 sm:col-span-1">
-                <option>Country / Region</option>
-                <option>Nigeria</option>
-                <option>Ghana</option>
-                <option>Niger</option>
-              </select>
-              <input
-                placeholder="Street address"
-                className="p-3 border rounded col-span-2"
-              />
-              <input
-                placeholder="Town / City"
-                className="p-3 border rounded col-span-2 sm:col-span-1"
-              />
-              <input
-                placeholder="Province"
-                className="p-3 border rounded col-span-2 sm:col-span-1"
-              />
-              <input
-                placeholder="ZIP Code"
-                className="p-3 border rounded col-span-2 sm:col-span-1"
-              />
-              <input
-                placeholder="Phone"
-                className="p-3 border rounded col-span-2 sm:col-span-1"
-              />
-              <input
-                placeholder="Email address"
-                className="p-3 border rounded col-span-2"
-              />
-              <textarea
-                placeholder="Additional information"
-                rows={3}
-                className="p-3 border rounded col-span-2"
-              />
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm w-full">
+              {/* First Name - Full width on mobile, half on desktop */}
+              <div className="md:col-span-1">
+                <input
+                  placeholder="First name"
+                  className="p-3 border rounded w-full"
+                />
+              </div>
+
+              {/* Last Name - Full width on mobile, half on desktop */}
+              <div className="md:col-span-1">
+                <input
+                  placeholder="Last name"
+                  className="p-3 border rounded w-full"
+                />
+              </div>
+
+              {/* Company Name - Always full width */}
+              <div className="col-span-2">
+                <input
+                  placeholder="Company name (optional)"
+                  className="p-3 border rounded w-full"
+                />
+              </div>
+
+              {/* Country - Full width on mobile, half on desktop */}
+              <div className="col-span-2 md:col-span-1">
+                <select className="p-3 border rounded w-full">
+                  <option>Country / Region</option>
+                  <option>Nigeria</option>
+                  <option>Ghana</option>
+                  <option>Niger</option>
+                </select>
+              </div>
+
+              {/* Street Address - Always full width */}
+              <div className="col-span-2">
+                <input
+                  placeholder="Street address"
+                  className="p-3 border rounded w-full"
+                />
+              </div>
+
+              {/* Town/City - Full width on mobile, half on desktop */}
+              <div className="col-span-2 md:col-span-1">
+                <input
+                  placeholder="Town / City"
+                  className="p-3 border rounded w-full"
+                />
+              </div>
+
+              {/* Province - Full width on mobile, half on desktop */}
+              <div className="col-span-2 md:col-span-1">
+                <input
+                  placeholder="Province"
+                  className="p-3 border rounded w-full"
+                />
+              </div>
+
+              {/* ZIP Code - Full width on mobile, half on desktop */}
+              <div className="col-span-2 md:col-span-1">
+                <input
+                  placeholder="ZIP Code"
+                  className="p-3 border rounded w-full"
+                />
+              </div>
+
+              {/* Phone - Full width on mobile, half on desktop */}
+              <div className="col-span-2 md:col-span-1">
+                <input
+                  placeholder="Phone"
+                  className="p-3 border rounded w-full"
+                />
+              </div>
+
+              {/* Email - Always full width */}
+              <div className="col-span-2">
+                <input
+                  placeholder="Email address"
+                  className="p-3 border rounded w-full"
+                />
+              </div>
+
+              {/* Additional Info - Always full width */}
+              <div className="col-span-2">
+                <textarea
+                  placeholder="Additional information"
+                  rows={3}
+                  className="p-3 border rounded w-full"
+                />
+              </div>
             </form>
           </div>
 
@@ -91,15 +140,15 @@ const ProductCheck = () => {
             <h2 className="text-xl font-semibold mb-4">Product</h2>
             <div className="flex justify-between text-sm mb-2 text-gray-700">
               <span>Agggard Sofa × 1</span>
-              <span>₦. {total.toLocaleString()}</span>
+              <span>$. {total.toLocaleString()}</span>
             </div>
             <div className="flex justify-between text-sm mb-2 text-gray-700">
               <span>Subtotal</span>
-              <span>₦. {total.toLocaleString()}</span>
+              <span>$. {total.toLocaleString()}</span>
             </div>
             <div className="flex justify-between font-semibold text-lg text-yellow-700 border-t border-gray-300 pt-4 mt-4">
               <span>Total</span>
-              <span>₦. {total.toLocaleString()}</span>
+              <span>$. {total.toLocaleString()}</span>
             </div>
 
             {/* Payment Options */}
