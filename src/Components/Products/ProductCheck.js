@@ -41,9 +41,9 @@ const ProductCheck = () => {
           {/* Billing Details */}
           <div className="w-full lg:w-2/3">
             <h2 className="text-xl font-semibold mb-6">Billing details</h2>
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm w-full">
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm w-full ">
               {/* First Name - Full width on mobile, half on desktop */}
-              <div className="md:col-span-1">
+              <div className="col-span-2 md:col-span-1">
                 <input
                   placeholder="First name"
                   className="p-3 border rounded w-full"
@@ -51,11 +51,11 @@ const ProductCheck = () => {
               </div>
 
               {/* Last Name - Full width on mobile, half on desktop */}
-              <div className="md:col-span-1">
+              <div className="col-span-2 md:col-span-1">
                 <input
                   placeholder="Last name"
                   className="p-3 border rounded w-full"
-                />
+                />{" "}
               </div>
 
               {/* Company Name - Always full width */}
