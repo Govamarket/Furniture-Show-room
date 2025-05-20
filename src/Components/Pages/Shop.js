@@ -194,26 +194,6 @@ const Shop = () => {
       description: "Stylish cafe chair",
       hasDiscount: true,
     },
-
-    {
-      id: "prod-19",
-      img: washBase,
-      name: "Lolito",
-      price: "₦199",
-      discount: "₦50",
-      description: "Luxury big sofa",
-      newProduct: true,
-    },
-
-    {
-      id: "prod-20",
-      img: bigSofa,
-      name: "Respira",
-      price: "$199",
-      discount: "$50",
-      description: "Outdoor bar table and stool",
-      hasDiscount: true,
-    },
   ];
 
   // State for pagination and filtering
