@@ -274,7 +274,7 @@ const Search = () => {
       {/* Recently viewed products - This would typically use local storage or user session data */}
       <div className="container mx-auto px-4 py-12">
         <h2 className="text-xl font-semibold mb-6">Recently Viewed</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-4 gap-6">
           {allProducts.slice(0, 4).map((product) => (
             <div key={product.id}>
               <ProductCard

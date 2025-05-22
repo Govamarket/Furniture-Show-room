@@ -344,7 +344,7 @@ const Shop = () => {
           }`}
         >
           {currentProducts.map((item) => (
-            <div key={item.id} className={viewMode === "grid" ? "" : "w-full"}>
+            <div key={item.id} className={viewMode === "grid " ? "" : "w-80"}>
               <ProductCard
                 id={item.id}
                 name={item.name}
