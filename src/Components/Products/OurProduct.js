@@ -101,7 +101,7 @@ const OurProduct = () => {
         )}
 
         {/* Product List */}
-        <section className="flex justify-evenly flex-wrap gap-x-1 gap-y-3 p-4">
+        <section className="flex justify-evenly flex-wrap gap-x-1 gap-y-3 p-4 ">
           {products.map((product, idx) => (
             <div
               key={idx}

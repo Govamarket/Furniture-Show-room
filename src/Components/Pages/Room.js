@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import frameImage from "./../../Asset/mskk.png";
 import dinerChair from "./../../Asset/anglr.png";
 import angleLine from "./../../Asset/anle.png";
-
+import { Link } from "react-router-dom";
 const Room = () => {
   return (
     <div className="bg-[#f8f6ee] py-16 px-6 flex flex-col md:flex-row items-start gap-8">
@@ -16,9 +16,11 @@ const Room = () => {
           Our designer already made a lot of beautiful prototype of rooms that
           inspire you.
         </p>
-        <button className="bg-yellow-600 text-white px-6 py-2 rounded hover:bg-yellow-700 transition duration-300">
-          Explore More
-        </button>
+        <Link to="/shop">
+          <button className="bg-yellow-600 text-white px-6 py-2 rounded hover:bg-yellow-700 transition duration-300">
+            Explore More
+          </button>
+        </Link>
       </div>
 
       {/* Right Side - Scrollable on Mobile */}
